@@ -1,7 +1,7 @@
-const server = 'http://localhost:3000/';
+//const server = 'http://localhost:3000/';
 
 function sendRequest (url, data, method) {
-  url = server + url;
+  url =  url;
   fetch(url, {
     method: method,
     headers: getHeaders(data),
