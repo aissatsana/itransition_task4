@@ -156,9 +156,9 @@ app.post('/logout', (req, res) => {
   req.session.destroy(err => {
     if (err) {
       console.error('Ошибка при выходе из сеанса:', err);
-      res.status(500).json({ error: 'Internal Server Error' });
+      res.status(500).json({ error: 'Что-то пошло не так!' });
     } else {
-      res.status(200).json({ message: 'Logout successful' });
+      res.redirect('/inner-page');
     }
   });
 });
