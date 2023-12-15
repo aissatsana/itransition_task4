@@ -43,6 +43,7 @@
                         <input class="form-check-input" type="checkbox" id="selectAll">
                       </div>
                     </th>
+                    <th scope="col">ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Last Login</th>
@@ -58,6 +59,7 @@
                           <input class="form-check-input" type="checkbox" id="<%= user._id %>">
                         </div>
                       </td>
+                      <td><%= user._id %></td>
                       <td><%= user.name %></td>
                       <td><%= user.email %></td>
                       <td><%= formatDate(user.lastLoginDate) %></td>

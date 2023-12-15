@@ -33,6 +33,7 @@ const userSchema = new mongoose.Schema({
 
 const uri = process.env.MONGO_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect('mongodb://localhost:27017/task4', { useNewUrlParser: true, useUnifiedTopology: true });
 const User = mongoose.model('User', userSchema);
 module.exports = User;
 
